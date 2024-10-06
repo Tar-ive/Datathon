@@ -12,27 +12,37 @@ def main():
     st.header("Project Origin")
     st.write("""
     This project began with the ambitious task of scraping data from the Journey North website, 
-    a comprehensive resource for tracking monarch butterfly migrations. The data collection process evolved as follows:
+    a comprehensive resource for tracking monarch butterfly migrations. Our initial dataset combined 
+    spring and fall data, resulting in approximately 166,000 observations of monarch butterfly sightings.
 
-    1. Initially, we scraped "Monarch (Other)" data from Journey North.
+    The data collection process evolved as follows:
+    1. Initially, we scraped both "Monarch (Other)" and adult monarch butterfly data from Journey North.
     2. Upon analysis, we realized the need to focus specifically on adult monarch butterflies for more accurate migration patterns.
-    3. We then scraped adult monarch butterfly data from 2017-2024, providing a robust dataset for our analysis.
+    3. We then refined our scraping process to collect adult monarch butterfly data from 2017-2024.
+
+    During the data cleaning process, we faced several challenges:
+    - Due to an error in our scraping process, the data was initially formatted incorrectly, which took several hours to identify and resolve.
+    - We reduced the dataset to about 111,000 observations after cleaning and dropping missing columns.
+    - We standardized date formats, corrected inconsistencies in location names, and converted coordinates to a uniform format.
+
+    These challenges highlight the importance of careful data collection and cleaning in ensuring the accuracy of our analysis.
 
     The web scraping process, detailed in the MonarchWebScrapper.ipynb file, utilized Python libraries such as requests, 
     BeautifulSoup, and pandas to efficiently collect and organize the data.
 
-    After scraping, the data underwent an initial cleaning process to ensure consistency and accuracy. This included:
-    - Removing duplicate entries
-    - Standardizing date formats
-    - Correcting any inconsistencies in location names
-    - Converting coordinates to a uniform format
-
-    The final dataset, named "cleaned_merged.csv", contains over 111,000 observations of adult monarch butterfly sightings. 
     We chose to focus on adult butterflies because they are easier to spot and potentially represent the highest numbers 
     in migration patterns, providing a more accurate representation of monarch movement.
 
     This cleaned and focused dataset forms the foundation of our analysis and visualizations presented in this application.
     """)
+
+    # Display the new screenshot
+    image_path = "Screenshot 2024-10-06 at 9.57.25 AM.png"
+    if os.path.exists(image_path):
+        image = Image.open(image_path)
+        st.image(image, caption="Sample of the combined spring and fall data from our initial scraping", use_column_width=True)
+    else:
+        st.write("Image not found. The sample data screenshot is currently unavailable.")
 
     # Load and display basic statistics
     st.header("Dataset Overview")
