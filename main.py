@@ -45,6 +45,21 @@ def main():
     else:
         st.write("Image not found. The geographic distribution map is currently unavailable.")
 
+    # Add the new heatmap image
+    image_path_heatmap = "image.webp"
+    if os.path.exists(image_path_heatmap):
+        image_heatmap = Image.open(image_path_heatmap)
+        st.image(image_heatmap, caption="Heatmap of Monarch Butterfly Sightings Distribution", use_column_width=True)
+    else:
+        st.write("Heatmap image not found. The detailed distribution map is currently unavailable.")
+
+    # Add explanation for the heatmap
+    st.write('''
+    This heatmap provides a more detailed view of monarch butterfly sighting distributions across North America. 
+    The red areas indicate higher concentrations of sightings, while blue areas show lower concentrations. 
+    This visualization helps identify key regions for monarch butterfly populations and migration routes.
+    ''')
+
     # Visualizations
     st.header("Visualizations")
 
