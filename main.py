@@ -253,5 +253,75 @@ def main():
     and informed our decision-making process for future data processing steps.
     ''')
 
+    # New section: Air Quality and Pollutant Analysis
+    st.subheader("Air Quality and Pollutant Analysis")
+
+    st.write('''
+    Air quality and pollutant levels can significantly impact monarch butterfly populations and their habitats. 
+    The following visualizations provide insights into various pollutant distributions and air quality metrics 
+    that may influence monarch butterfly migration patterns and overall health.
+    ''')
+
+    # Top 10 Counties with Unhealthy Air Quality
+    image_path = "download (5).png"
+    if os.path.exists(image_path):
+        image = Image.open(image_path)
+        st.image(image, caption="Top 10 Counties with Most Occurrences of Unhealthy Air Quality Categories", use_column_width=True)
+    else:
+        st.write("Image not found. The Top 10 Counties with Unhealthy Air Quality graph is currently unavailable.")
+   
+    st.write('''
+    This bar chart shows the top 10 counties with the highest occurrences of unhealthy air quality categories. 
+    Understanding air quality in different regions can help explain variations in monarch butterfly populations 
+    and migration patterns. Counties with consistently poor air quality may see reduced monarch populations or 
+    altered migration behaviors, as pollution can affect both the butterflies directly and their food sources.
+    ''')
+
+    # Overall Pollutant Distribution
+    image_path = "download (6).png"
+    if os.path.exists(image_path):
+        image = Image.open(image_path)
+        st.image(image, caption="Overall Pollutant Distribution in Selected States", use_column_width=True)
+    else:
+        st.write("Image not found. The Overall Pollutant Distribution graph is currently unavailable.")
+   
+    st.write('''
+    This bar chart illustrates the overall distribution of different pollutants across selected states. 
+    The predominance of certain pollutants, such as ozone and PM2.5, can have significant impacts on monarch butterflies. 
+    High levels of these pollutants can damage milkweed plants, the sole food source for monarch caterpillars, 
+    and may also directly affect the health and navigation abilities of adult butterflies.
+    ''')
+
+    # Pollutant Distribution by Year (Bar Chart)
+    image_path = "download (7).png"
+    if os.path.exists(image_path):
+        image = Image.open(image_path)
+        st.image(image, caption="Pollutant Distribution by Year in Selected States (Bar Chart)", use_column_width=True)
+    else:
+        st.write("Image not found. The Pollutant Distribution by Year (Bar Chart) is currently unavailable.")
+   
+    st.write('''
+    This stacked bar chart shows the distribution of pollutants by year in selected states. By visualizing the 
+    changes in pollutant levels over time, we can identify trends that might correlate with changes in monarch 
+    butterfly populations or migration patterns. Years with higher levels of harmful pollutants might correspond 
+    to years with lower monarch sightings or altered migration routes.
+    ''')
+
+    # Pollutant Distribution by Year (Line Chart)
+    image_path = "download (8).png"
+    if os.path.exists(image_path):
+        image = Image.open(image_path)
+        st.image(image, caption="Pollutant Distribution by Year in Selected States (Line Chart)", use_column_width=True)
+    else:
+        st.write("Image not found. The Pollutant Distribution by Year (Line Chart) is currently unavailable.")
+   
+    st.write('''
+    This line chart provides another view of pollutant distribution over the years in selected states. The 
+    trends visible in this chart can help us understand long-term changes in air quality that might affect 
+    monarch butterflies. For instance, a consistent increase in ozone levels over the years could potentially 
+    be linked to changes in monarch population sizes or shifts in their migration patterns. This visualization 
+    allows us to identify any correlations between air quality trends and monarch butterfly data over time.
+    ''')
+
 if __name__ == "__main__":
     main()
