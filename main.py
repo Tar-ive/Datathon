@@ -244,5 +244,14 @@ def main():
     and content of our data, including columns for Date, Town, State/Province, Latitude, Longitude, and Number of sightings.
     ''')
 
+    st.write('''
+    We initially attempted to geocode this 15,000 sample dataset to get more precise location data. 
+    However, due to the extensive time required (estimated at 4 hours) and limited computational resources, 
+    we decided not to proceed with this step for the sample data.
+
+    This experience highlighted the computational challenges we might face when dealing with the full dataset, 
+    and informed our decision-making process for future data processing steps.
+    ''')
+
 if __name__ == "__main__":
     main()
