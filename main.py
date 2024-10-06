@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from PIL import Image
+import os
 
 st.set_page_config(page_title="Monarch Butterfly Sightings Analysis", layout="wide")
 
@@ -43,8 +44,12 @@ def main():
 
     # Geographic Distribution of Monarch Butterfly Sightings
     st.header("Geographic Distribution of Monarch Butterfly Sightings")
-    image_geo = Image.open("Screenshot 2024-10-06 at 9.46.19 AM.png")
-    st.image(image_geo, caption="Heatmap of Monarch Butterfly Sightings Across the United States", use_column_width=True)
+    image_path = "Screenshot 2024-10-06 at 9.46.19 AM.png"
+    if os.path.exists(image_path):
+        image_geo = Image.open(image_path)
+        st.image(image_geo, caption="Heatmap of Monarch Butterfly Sightings Across the United States", use_column_width=True)
+    else:
+        st.write("Image not found. The geographic distribution map is currently unavailable.")
     st.write("""
     This heatmap illustrates the geographic distribution of monarch butterfly sightings across the United States. 
     The color intensity represents the concentration of sightings, with darker colors indicating a higher number of observations. 
@@ -62,8 +67,12 @@ def main():
 
     # Display and explain the first image
     st.subheader("Monarch Butterfly Population Trend")
-    image1 = Image.open("download.png")
-    st.image(image1, caption="Monarch Butterfly Population Trend", use_column_width=True)
+    image_path = "download.png"
+    if os.path.exists(image_path):
+        image1 = Image.open(image_path)
+        st.image(image1, caption="Monarch Butterfly Population Trend", use_column_width=True)
+    else:
+        st.write("Image not found. The Monarch Butterfly Population Trend graph is currently unavailable.")
     st.write("""
     This graph shows the trend of Monarch Butterfly population over time. The x-axis represents years, 
     while the y-axis shows the population count. The line graph illustrates fluctuations in the butterfly 
@@ -88,8 +97,12 @@ def main():
 
     # Display and explain the second image
     st.subheader("Geographical Distribution of Monarch Butterfly Sightings")
-    image2 = Image.open("download (1).png")
-    st.image(image2, caption="Geographical Distribution of Monarch Butterfly Sightings", use_column_width=True)
+    image_path = "download (1).png"
+    if os.path.exists(image_path):
+        image2 = Image.open(image_path)
+        st.image(image2, caption="Geographical Distribution of Monarch Butterfly Sightings", use_column_width=True)
+    else:
+        st.write("Image not found. The Geographical Distribution of Monarch Butterfly Sightings map is currently unavailable.")
     st.write("""
     This map visualization shows the geographical distribution of Monarch Butterfly sightings. 
     Each point on the map represents a location where butterflies were observed. The color intensity 
@@ -109,8 +122,12 @@ def main():
 
     # Display and explain the third image
     st.subheader("Seasonal Pattern of Monarch Butterfly Sightings")
-    image3 = Image.open("download (2).png")
-    st.image(image3, caption="Seasonal Pattern of Monarch Butterfly Sightings", use_column_width=True)
+    image_path = "download (2).png"
+    if os.path.exists(image_path):
+        image3 = Image.open(image_path)
+        st.image(image3, caption="Seasonal Pattern of Monarch Butterfly Sightings", use_column_width=True)
+    else:
+        st.write("Image not found. The Seasonal Pattern of Monarch Butterfly Sightings graph is currently unavailable.")
     st.write("""
     This bar chart illustrates the seasonal pattern of Monarch Butterfly sightings. The x-axis represents 
     months, while the y-axis shows the number of sightings. This visualization helps us understand 
@@ -143,8 +160,12 @@ def main():
     st.write("Top 10 states with the highest number of observations:")
     st.table(top_10_states.reset_index(name='Count'))
 
-    image4 = Image.open("line_slope.png")
-    st.image(image4, caption="Top 10 States and Monarch Population Sightings from 2017-2024", use_column_width=True)
+    image_path = "line_slope.png"
+    if os.path.exists(image_path):
+        image4 = Image.open(image_path)
+        st.image(image4, caption="Top 10 States and Monarch Population Sightings from 2017-2024", use_column_width=True)
+    else:
+        st.write("Image not found. The Top 10 States and Monarch Population Sightings graph is currently unavailable.")
     st.write("""
     This multi-line graph shows the Monarch Butterfly sightings for the top 10 states from 2017 to 2024. 
     Each line represents a different state, allowing for easy comparison of sighting trends across states over time. 
