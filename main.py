@@ -102,6 +102,20 @@ def main():
     else:
         st.write("Image not found. The Distribution of Spring and Fall Data graph is currently unavailable.")
 
+    # Add the new image and explanation
+    image_path_4 = "download (4).png"
+    if os.path.exists(image_path_4):
+        image6 = Image.open(image_path_4)
+        st.image(image6, caption="Sample of the 15k Dataset", use_column_width=True)
+    else:
+        st.write("Image not found. The Sample of 15k Dataset image is currently unavailable.")
+
+    st.write('''
+    This image shows a snapshot of our 15,000 observation sample dataset. It gives an idea of the structure 
+    and content of our data, including columns for Date, Town, State/Province, Latitude, Longitude, and Number of sightings.
+    This raw data view helps illustrate the type of information we're working with in our analysis.
+    ''')
+
     # Air Quality and Pollutant Analysis
     st.subheader("Air Quality and Pollutant Analysis")
     st.write('''
