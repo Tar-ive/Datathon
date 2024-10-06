@@ -36,104 +36,120 @@ def main():
     st.write(f"Date range of observations: from {df['Date'].min().strftime('%m/%d/%Y')} to {df['Date'].max().strftime('%m/%d/%Y')}")
     st.write(f"Number of unique locations: {df['Town'].nunique():,}")
 
-    # Geographic Distribution of Monarch Butterfly Sightings
-    st.header("Geographic Distribution of Monarch Butterfly Sightings")
-    image_path = "Screenshot 2024-10-06 at 9.46.19 AM.png"
+    # 1. Sample Dataset (download (4).png)
+    st.header("Sample Dataset")
+    image_path = "download (4).png"
     if os.path.exists(image_path):
-        image_geo = Image.open(image_path)
-        st.image(image_geo, caption="Heatmap of Monarch Butterfly Sightings Across the United States", use_column_width=True)
+        image = Image.open(image_path)
+        st.image(image, caption="Sample of the Dataset", use_column_width=True)
     else:
-        st.write("Image not found. The geographic distribution map is currently unavailable.")
-
-    # Add the new heatmap image
-    image_path_heatmap = "image.webp"
-    if os.path.exists(image_path_heatmap):
-        image_heatmap = Image.open(image_path_heatmap)
-        st.image(image_heatmap, caption="Heatmap of Monarch Butterfly Sightings Distribution", use_column_width=True)
-    else:
-        st.write("Heatmap image not found. The detailed distribution map is currently unavailable.")
-
-    # Add explanation for the heatmap
-    st.write('''
-    This heatmap provides a more detailed view of monarch butterfly sighting distributions across North America. 
-    The red areas indicate higher concentrations of sightings, while blue areas show lower concentrations. 
-    This visualization helps identify key regions for monarch butterfly populations and migration routes.
-    ''')
-
-    # Visualizations
-    st.header("Visualizations")
-
-    # Monarch Butterfly Population Trend
-    st.subheader("Monarch Butterfly Population Trend")
-    image_path = "download.png"
-    if os.path.exists(image_path):
-        image1 = Image.open(image_path)
-        st.image(image1, caption="Monarch Butterfly Population Trend", use_column_width=True)
-    else:
-        st.write("Image not found. The Monarch Butterfly Population Trend graph is currently unavailable.")
-
-    # Top 10 States and Monarch Population Sightings from 2017-2024
-    st.subheader("Top 10 States and Monarch Population Sightings from 2017-2024")
-    
-    # Calculate and display top 10 states
-    top_10_states = df.groupby('State/Province')['State/Province'].count().nlargest(10)
-    st.write("Top 10 states with the highest number of observations:")
-    st.table(top_10_states.reset_index(name='Count'))
-
-    image_path = "line_slope.png"
-    if os.path.exists(image_path):
-        image4 = Image.open(image_path)
-        st.image(image4, caption="Top 10 States and Monarch Population Sightings from 2017-2024", use_column_width=True)
-    else:
-        st.write("Image not found. The Top 10 States and Monarch Population Sightings graph is currently unavailable.")
-
-    # 15k Sample Data Analysis
-    st.subheader("15k Sample Data Analysis")
-    st.write('''
-    To gain initial insights and test our data processing methods, we took a 15,000 observation sample from our larger dataset. 
-    This sample allowed us to quickly iterate on our analysis techniques and identify potential patterns or issues in the data 
-    before scaling up to the full dataset.
-    ''')
-
-    image_path_3 = "download (3).png"
-    if os.path.exists(image_path_3):
-        image5 = Image.open(image_path_3)
-        st.image(image5, caption="Distribution of Spring and Fall Data in 15k Sample", use_column_width=True)
-    else:
-        st.write("Image not found. The Distribution of Spring and Fall Data graph is currently unavailable.")
-
-    # Add the new image and explanation
-    image_path_4 = "download (4).png"
-    if os.path.exists(image_path_4):
-        image6 = Image.open(image_path_4)
-        st.image(image6, caption="Sample of the 15k Dataset", use_column_width=True)
-    else:
-        st.write("Image not found. The Sample of 15k Dataset image is currently unavailable.")
+        st.write("Image not found. The Sample Dataset image is currently unavailable.")
 
     st.write('''
-    This image shows a snapshot of our 15,000 observation sample dataset. It gives an idea of the structure 
+    This image shows a snapshot of our dataset. It gives an idea of the structure 
     and content of our data, including columns for Date, Town, State/Province, Latitude, Longitude, and Number of sightings.
     This raw data view helps illustrate the type of information we're working with in our analysis.
     ''')
 
-    # Air Quality and Pollutant Analysis
-    st.subheader("Air Quality and Pollutant Analysis")
-    st.write('''
-    Air quality and pollutant levels can significantly impact monarch butterfly populations and their habitats. 
-    The following visualizations provide insights into various pollutant distributions and air quality metrics 
-    that may influence monarch butterfly migration patterns and overall health.
-    ''')
-
-    # Top 10 Counties with Unhealthy Air Quality
-    image_path = "download (5).png"
+    # 2. Geographic Distribution (image.webp)
+    st.header("Geographic Distribution of Monarch Butterfly Sightings")
+    image_path = "image.webp"
     if os.path.exists(image_path):
         image = Image.open(image_path)
-        st.image(image, caption="Top 10 Counties with Most Occurrences of Unhealthy Air Quality Categories", use_column_width=True)
+        st.image(image, caption="Heatmap of Monarch Butterfly Sightings Distribution", use_column_width=True)
     else:
-        st.write("Image not found. The Top 10 Counties with Unhealthy Air Quality graph is currently unavailable.")
+        st.write("Image not found. The geographic distribution heatmap is currently unavailable.")
 
-    # Pollutant Distribution Trends
-    st.subheader("Pollutant Distribution Trends")
+    st.write('''
+    This heatmap provides a detailed view of monarch butterfly sighting distributions across North America. 
+    The red areas indicate higher concentrations of sightings, while blue areas show lower concentrations. 
+    This visualization helps identify key regions for monarch butterfly populations and migration routes.
+    ''')
+
+    # 3. Top 30 States/Provinces (download(9).png)
+    st.header("Top 30 States/Provinces for Monarch Butterfly Sightings")
+    image_path = "download (9).png"
+    if os.path.exists(image_path):
+        image = Image.open(image_path)
+        st.image(image, caption="Top 30 States/Provinces by Monarch Butterfly Sightings", use_column_width=True)
+    else:
+        st.write("Image not found. The Top 30 States/Provinces graph is currently unavailable.")
+    
+    st.write('''
+    This bar chart shows the top 30 states or provinces with the highest number of monarch butterfly sightings. 
+    This distribution provides valuable insights into the monarch butterfly's preferred habitats and migration routes. 
+    States with higher sighting numbers may be critical for conservation efforts.
+    ''')
+
+    # 4. Top 50 Towns (download(10).png)
+    st.header("Top 50 Towns in Top 10 States (2017-2024)")
+    image_path = "download (10).png"
+    if os.path.exists(image_path):
+        image = Image.open(image_path)
+        st.image(image, caption="Top 50 Towns in Top 10 States for Monarch Butterfly Sightings (2017-2024)", use_column_width=True)
+    else:
+        st.write("Image not found. The Top 50 Towns in Top 10 States graph is currently unavailable.")
+    
+    st.write('''
+    This visualization shows the top 50 towns within the top 10 states for monarch butterfly sightings from 2017 to 2024. 
+    It helps identify specific localities that are particularly important for monarch butterflies, which could be 
+    crucial for targeted conservation efforts.
+    ''')
+
+    # 5. Yearly Sightings (download(11).png)
+    st.header("Yearly Sightings in Top 10 States (2017-2024)")
+    image_path = "download (11).png"
+    if os.path.exists(image_path):
+        image = Image.open(image_path)
+        st.image(image, caption="Yearly Monarch Butterfly Sightings in Top 10 States (2017-2024)", use_column_width=True)
+    else:
+        st.write("Image not found. The Yearly Sightings in Top 10 States graph is currently unavailable.")
+    
+    st.write('''
+    This set of graphs shows the yearly trends of monarch butterfly sightings in the top 10 states from 2017 to 2024. 
+    These trends can help identify patterns in monarch populations over time and across different regions, 
+    which could be influenced by factors such as climate change, habitat loss, or conservation efforts.
+    ''')
+
+    # 6. Top 10 States Population Trend (line_slope.png)
+    st.header("Top 10 States and Monarch Population Sightings from 2017-2024")
+    image_path = "line_slope.png"
+    if os.path.exists(image_path):
+        image = Image.open(image_path)
+        st.image(image, caption="Top 10 States and Monarch Population Sightings from 2017-2024", use_column_width=True)
+    else:
+        st.write("Image not found. The Top 10 States and Monarch Population Sightings graph is currently unavailable.")
+
+    # 7. Overall Pollutant Distribution (download(6).png)
+    st.header("Overall Pollutant Distribution in Selected States")
+    image_path = "download (6).png"
+    if os.path.exists(image_path):
+        image = Image.open(image_path)
+        st.image(image, caption="Overall Pollutant Distribution in Selected States", use_column_width=True)
+    else:
+        st.write("Image not found. The Overall Pollutant Distribution graph is currently unavailable.")
+
+    st.write('''
+    This bar chart shows the overall distribution of different pollutants in selected states. 
+    Understanding the prevalence of various pollutants can help in assessing their potential impact on monarch butterfly populations.
+    ''')
+
+    # 8. Pollutant Distribution by Year (Bar Chart) (download(7).png)
+    st.header("Pollutant Distribution by Year in Selected States")
+    image_path = "download (7).png"
+    if os.path.exists(image_path):
+        image = Image.open(image_path)
+        st.image(image, caption="Pollutant Distribution by Year in Selected States (Bar Chart)", use_column_width=True)
+    else:
+        st.write("Image not found. The Pollutant Distribution by Year (Bar Chart) is currently unavailable.")
+
+    st.write('''
+    This bar chart illustrates the distribution of different pollutants over the years in selected states. 
+    It allows us to observe changes in pollutant levels over time, which may correlate with changes in monarch butterfly populations.
+    ''')
+
+    # 9. Pollutant Distribution by Year (Line Chart) (download(8).png)
+    st.header("Pollutant Distribution Trends")
     image_path = "download (8).png"
     if os.path.exists(image_path):
         image = Image.open(image_path)
@@ -148,54 +164,18 @@ def main():
     in monarch population sizes or shifts in their migration patterns.
     ''')
 
-    # Top 30 States/Provinces for Monarch Butterfly Sightings
-    st.subheader("Top 30 States/Provinces for Monarch Butterfly Sightings")
-    image_path = "download (9).png"
+    # 10. Monarch Butterfly Population Trend (download.png)
+    st.header("Monarch Butterfly Population Trend")
+    image_path = "download.png"
     if os.path.exists(image_path):
         image = Image.open(image_path)
-        st.image(image, caption="Top 30 States/Provinces by Monarch Butterfly Sightings", use_column_width=True)
+        st.image(image, caption="Monarch Butterfly Population Trend", use_column_width=True)
     else:
-        st.write("Image not found. The Top 30 States/Provinces graph is currently unavailable.")
-    
-    st.write('''
-    This bar chart shows the top 30 states or provinces with the highest number of monarch butterfly sightings. 
-    This distribution provides valuable insights into the monarch butterfly's preferred habitats and migration routes. 
-    States with higher sighting numbers may be critical for conservation efforts.
-    ''')
+        st.write("Image not found. The Monarch Butterfly Population Trend graph is currently unavailable.")
 
-    # Top 50 Towns in Top 10 States (2017-2024)
-    st.subheader("Top 50 Towns in Top 10 States (2017-2024)")
-    image_path = "download (10).png"
-    if os.path.exists(image_path):
-        image = Image.open(image_path)
-        st.image(image, caption="Top 50 Towns in Top 10 States for Monarch Butterfly Sightings (2017-2024)", use_column_width=True)
-    else:
-        st.write("Image not found. The Top 50 Towns in Top 10 States graph is currently unavailable.")
-    
-    st.write('''
-    This visualization shows the top 50 towns within the top 10 states for monarch butterfly sightings from 2017 to 2024. 
-    It helps identify specific localities that are particularly important for monarch butterflies, which could be 
-    crucial for targeted conservation efforts.
-    ''')
-
-    # Yearly Sightings in Top 10 States (2017-2024)
-    st.subheader("Yearly Sightings in Top 10 States (2017-2024)")
-    image_path = "download (11).png"
-    if os.path.exists(image_path):
-        image = Image.open(image_path)
-        st.image(image, caption="Yearly Monarch Butterfly Sightings in Top 10 States (2017-2024)", use_column_width=True)
-    else:
-        st.write("Image not found. The Yearly Sightings in Top 10 States graph is currently unavailable.")
-    
-    st.write('''
-    This set of graphs shows the yearly trends of monarch butterfly sightings in the top 10 states from 2017 to 2024. 
-    These trends can help identify patterns in monarch populations over time and across different regions, 
-    which could be influenced by factors such as climate change, habitat loss, or conservation efforts.
-    ''')
-
-    # Pesticide Usage and Monarch Butterfly Sightings
-    st.subheader("Pesticide Usage and Monarch Butterfly Sightings")
-    image_path = "download (12).png"
+    # 11. Pesticide Usage (download(1).png)
+    st.header("Pesticide Usage and Monarch Butterfly Sightings")
+    image_path = "download (1).png"
     if os.path.exists(image_path):
         image = Image.open(image_path)
         st.image(image, caption="States and their Total Pesticide Usage based on Concentration (2017-2022)", use_column_width=True)
@@ -207,20 +187,6 @@ def main():
     Pesticide use can have significant impacts on monarch butterfly populations by affecting their food sources 
     and habitats. Comparing these trends with monarch sightings data could reveal potential correlations between 
     pesticide use and monarch population changes.
-    ''')
-
-    # New Visualization
-    st.subheader("Additional Monarch Butterfly Visualization")
-    image_path_new = "Image 10-6-24 at 10.46 AM.jpeg"
-    if os.path.exists(image_path_new):
-        image_new = Image.open(image_path_new)
-        st.image(image_new, caption="New Monarch Butterfly Visualization", use_column_width=True)
-    else:
-        st.write("Image not found. The new visualization is currently unavailable.")
-
-    st.write('''
-    This new visualization provides additional insights into monarch butterfly data. 
-    [Please add a brief description of what this image represents once we can see its contents.]
     ''')
 
 if __name__ == "__main__":
