@@ -209,5 +209,19 @@ def main():
     pesticide use and monarch population changes.
     ''')
 
+    # New Visualization
+    st.subheader("Additional Monarch Butterfly Visualization")
+    image_path_new = "Image 10-6-24 at 10.46 AM.jpeg"
+    if os.path.exists(image_path_new):
+        image_new = Image.open(image_path_new)
+        st.image(image_new, caption="New Monarch Butterfly Visualization", use_column_width=True)
+    else:
+        st.write("Image not found. The new visualization is currently unavailable.")
+
+    st.write('''
+    This new visualization provides additional insights into monarch butterfly data. 
+    [Please add a brief description of what this image represents once we can see its contents.]
+    ''')
+
 if __name__ == "__main__":
     main()
