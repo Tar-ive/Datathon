@@ -1,16 +1,15 @@
+# This file is currently not used in the updated version of the app.
+# It's kept for potential future use or reference.
+
 import pandas as pd
 
-def load_data(file):
-    df = pd.read_csv(file)
-    df['Date'] = pd.to_datetime(df['Date'])
-    return df
+def load_sample_data():
+    # This function could be used to load a sample dataset for demonstration purposes
+    # if we decide to add this functionality in the future.
+    pass
 
-def filter_data(df, start_date, end_date, selected_states):
-    return df[
-        (df['Date'].dt.date >= start_date) &
-        (df['Date'].dt.date <= end_date) &
-        (df['State/Province'].isin(selected_states))
-    ]
+def process_data(df):
+    # This function could be used to process the data if we decide to add
+    # data manipulation features in the future.
+    pass
 
-def get_top_towns(df, n=10):
-    return df['Town'].value_counts().nlargest(n)
