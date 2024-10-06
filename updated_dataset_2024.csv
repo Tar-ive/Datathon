@@ -1,0 +1,286 @@
+Unnamed: 0,Date,Town,State/Province,Latitude,Longitude,Country,County
+1,12/26/2017,Corpus Christi,TX,27.8,-97.4,United States,Nueces County
+2,12/4/2017,Glendora,CA,34.1,-117.9,United States,Unknown
+3,11/23/2017,Houston,TX,29.7,-95.6,United States,Harris County
+4,11/16/2017,Comer,GA,34.1,-83.1,United States,Madison County
+5,11/9/2017,Harrisville,MI,44.7,-83.3,United States,Alcona County
+6,11/7/2017,Larchmont,NY,40.9,-73.8,United States,Westchester County
+7,11/6/2017,Austin,TX,30.2,-97.8,United States,Travis County
+8,11/5/2017,Plano,TX,33.0,-96.7,United States,Collin County
+9,11/5/2017,Mamaroneck,NY,40.9,-73.7,United States,Nassau County
+10,11/4/2017,West Milford,NJ,41.1,-74.4,United States,Passaic County
+11,11/4/2017,North Hampton,NH,43.0,-70.8,United States,Rockingham County
+12,10/31/2017,New Bloomfield,PA,40.3,-77.3,United States,Perry County
+13,10/30/2017,Leamington,ON,41.9,-82.5,Canada,Essex County
+14,10/27/2017,Toronto,ON,43.7,-79.4,Canada,Unknown
+15,10/27/2017,Palm Coast,FL,29.6,-81.3,United States,Flagler County
+16,10/25/2017,Linares,NLE,24.9,-99.6,México,Linares
+17,10/24/2017,Washington,DC,38.9,-77.0,United States,Unknown
+18,10/24/2017,Minneapolis,MN,45.0,-93.2,United States,Ramsey County
+19,10/21/2017,Saint Michael,MN,45.2,-93.7,United States,Wright County
+20,10/20/2017,Minneapolis,MN,45.0,-93.2,United States,Ramsey County
+21,10/20/2017,Fayetteville,NY,43.0,-76.1,United States,Onondaga County
+22,10/19/2017,Petaluma,CA,38.2,-122.6,United States,Sonoma County
+23,10/18/2017,Guadalupe River State Park,TX,29.9,-98.5,United States,Kendall County
+24,10/14/2017,Alamogordo,NM,32.9,-106.0,United States,Otero County
+25,10/11/2017,Rockville,MD,39.1,-77.2,United States,Montgomery County
+26,10/10/2017,Indian Lake,NY,43.8,-74.3,United States,Hamilton County
+27,10/10/2017,Indian Lake,NY,43.8,-74.3,United States,Hamilton County
+28,10/10/2017,York,PA,39.9,-76.7,United States,York County
+29,10/10/2017,Arlington,VA,38.9,-77.1,United States,Arlington County
+30,10/9/2017,Aiken,SC,33.6,-81.7,United States,Unknown
+31,10/8/2017,Tulsa,OK,36.2,-96.0,United States,Tulsa County
+32,10/8/2017,Las Cruces,NM,32.4,-107.0,United States,Doña Ana County
+33,10/7/2017,Cypress,TX,30.0,-95.7,United States,Harris County
+34,10/5/2017,Brandon,VT,43.8,-73.1,United States,Rutland County
+35,10/3/2017,Sour Lake,TX,30.0,-94.3,United States,Jefferson County
+36,10/3/2017,Cullman,AL,34.2,-86.9,United States,Cullman County
+37,10/2/2017,Madison,AL,34.7,-86.8,United States,Limestone County
+38,10/2/2017,Marion,IA,42.0,-91.6,United States,Linn County
+39,10/2/2017,Glen Rose,TX,32.1,-97.9,United States,Erath County
+40,10/2/2017,Oshawa,ON,43.9,-78.9,Canada,Durham Region
+41,10/1/2017,Rock Hill,SC,34.9,-81.0,United States,York County
+42,10/1/2017,Erie,PA,42.2,-80.1,United States,Erie County
+43,10/1/2017,Harrisville,MI,44.7,-83.3,United States,Alcona County
+44,10/1/2017,Mason,OH,39.4,-84.3,United States,Warren County
+45,9/30/2017,Carlisle,PA,40.2,-77.2,United States,Cumberland County
+46,9/30/2017,Thunder Bay,ON,48.4,-89.3,Canada,Thunder Bay District
+47,9/30/2017,Benson,VT,43.7,-73.3,United States,Rutland County
+48,9/29/2017,Moorestown,NJ,40.0,-74.9,United States,Burlington County
+49,9/29/2017,Farmington Hills,MI,42.5,-83.4,United States,Oakland County
+50,9/28/2017,Sharpsburg,MD,39.5,-77.7,United States,Washington County
+51,9/28/2017,Sour Lake,TX,30.0,-94.3,United States,Jefferson County
+52,9/27/2017,Lindenhurst,NY,40.7,-73.4,United States,Suffolk County
+53,9/27/2017,Lindenhurst,NY,40.7,-73.4,United States,Suffolk County
+54,9/26/2017,Shelburn,IN,39.2,-87.3,United States,Sullivan County
+55,9/26/2017,Sharpsburg,MD,39.5,-77.7,United States,Washington County
+56,9/25/2017,Eden Prairie,MN,44.9,-93.5,United States,Hennepin County
+57,9/25/2017,Nunda,NY,42.6,-77.9,United States,Livingston County
+58,9/24/2017,Silver Spring,MD,39.1,-77.0,United States,Montgomery County
+59,9/24/2017,Forest Park,IL,41.9,-87.8,United States,Cook County
+60,9/24/2017,Eau Claire,PA,41.1,-79.8,United States,Butler County
+61,9/23/2017,Toronto,ON,43.7,-79.4,Canada,Unknown
+62,9/23/2017,Fairfield,PA,39.8,-77.4,United States,Adams County
+63,9/23/2017,Indian Lake,NY,43.8,-74.3,United States,Hamilton County
+64,9/23/2017,North Brunswick Township,NJ,40.5,-74.5,United States,Somerset County
+65,9/23/2017,Lenexa,KS,39.0,-94.7,United States,Johnson County
+66,9/22/2017,Brandon,VT,43.8,-73.1,United States,Rutland County
+67,9/22/2017,Indian Lake,NY,43.8,-74.3,United States,Hamilton County
+68,9/22/2017,North Brunswick Township,NJ,40.5,-74.5,United States,Somerset County
+69,9/21/2017,Pacific,MO,38.4,-90.7,United States,Jefferson County
+70,9/21/2017,Charlotte,MI,42.6,-84.8,United States,Eaton County
+71,9/21/2017,Toronto,ON,45.3,-79.9,Canada,Parry Sound District
+72,9/21/2017,Mocksville,NC,35.9,-80.5,United States,Davie County
+73,9/21/2017,La Haute-Yamaska Regional County Municipality,QC,45.3,-72.8,Canada,La Haute-Yamaska
+74,9/20/2017,Minneapolis,MN,45.0,-93.2,United States,Ramsey County
+75,9/19/2017,Macon,MO,39.8,-92.5,United States,Macon County
+76,9/18/2017,Indian Lake,NY,43.8,-74.3,United States,Hamilton County
+77,9/18/2017,North Brunswick Township,NJ,40.5,-74.5,United States,Somerset County
+78,9/18/2017,Fairfield,PA,39.8,-77.4,United States,Adams County
+79,9/18/2017,Cayuga,ON,42.9,-79.8,Canada,Haldimand County
+80,9/17/2017,Comstock,NE,41.6,-99.3,United States,Custer County
+81,9/16/2017,Britton,SD,45.8,-97.6,United States,Marshall County
+82,9/16/2017,New Richmond,WI,45.1,-92.6,United States,Saint Croix County
+83,9/16/2017,Hackettstown,NJ,41.0,-75.0,United States,Warren County
+84,9/16/2017,New Albany,OH,40.1,-82.8,United States,Franklin County
+85,9/16/2017,,ON,45.3,-79.9,Canada,Parry Sound District
+86,9/16/2017,AcÃ¡mbaro,GUA,20.0,-100.7,México,Acámbaro
+87,9/15/2017,Fort Wayne,IN,41.2,-85.0,United States,Allen County
+88,9/15/2017,Holbrook,NY,40.8,-73.1,United States,Suffolk County
+89,9/15/2017,New Richmond,WI,45.1,-92.6,United States,Saint Croix County
+90,9/14/2017,Stonington,ME,44.2,-68.7,United States,Hancock County
+91,9/14/2017,Pequot Lakes,MN,46.7,-94.2,United States,Crow Wing County
+92,9/14/2017,Seymour,CT,41.4,-73.1,United States,Naugatuck Valley Planning Region
+93,9/14/2017,Olathe,KS,38.8,-94.8,United States,Johnson County
+94,9/14/2017,Olathe,KS,38.8,-94.8,United States,Johnson County
+95,9/14/2017,Port Clinton,OH,41.5,-82.9,United States,Ottawa County
+96,9/14/2017,St. Catharines,ON,43.2,-79.2,Canada,Niagara Region
+97,9/14/2017,Blairstown,NJ,41.0,-74.9,United States,Warren County
+98,9/14/2017,Stanton,WI,45.1,-92.5,United States,Saint Croix County
+99,9/14/2017,Maineville,OH,39.3,-84.2,United States,Warren County
+100,9/13/2017,Bloomfield,NJ,40.8,-74.2,United States,Essex County
+101,9/13/2017,Pennsylvania Furnace,PA,40.7,-77.9,United States,Huntingdon County
+102,9/13/2017,Hopewell Junction,NY,41.6,-73.7,United States,Dutchess County
+103,9/13/2017,Dundalk,MD,39.3,-76.5,United States,Baltimore County
+104,9/13/2017,Hagerstown,MD,39.7,-77.7,United States,Washington County
+105,9/13/2017,Amite City,LA,30.7,-90.3,United States,Tangipahoa Parish
+106,9/12/2017,Wapwallopen,PA,41.1,-76.0,United States,Luzerne County
+107,9/12/2017,Wapwallopen,PA,41.1,-76.0,United States,Luzerne County
+108,9/12/2017,Sharpsburg,MD,39.5,-77.7,United States,Washington County
+109,9/12/2017,Stanton,WI,45.1,-92.5,United States,Saint Croix County
+110,9/12/2017,Hackettstown,NJ,41.0,-75.0,United States,Warren County
+111,9/12/2017,Plainview,TX,34.2,-101.7,United States,Hale County
+112,9/12/2017,Cazenovia,NY,42.9,-75.8,United States,Madison County
+113,9/12/2017,Pittsburg,KS,37.4,-94.7,United States,Crawford County
+114,9/11/2017,Wapwallopen,PA,41.1,-76.0,United States,Luzerne County
+115,9/11/2017,New Richmond,WI,45.1,-92.6,United States,Saint Croix County
+116,9/11/2017,Hilliard,OH,40.0,-83.2,United States,Franklin County
+117,9/11/2017,Brookfield,IL,41.8,-87.9,United States,Cook County
+118,9/11/2017,Xenia,OH,39.7,-83.9,United States,Greene County
+119,9/11/2017,Xenia,OH,39.7,-83.9,United States,Greene County
+120,9/11/2017,Gladstone,MB,50.2,-99.0,Canada,Municipality of WestLake – Gladstone
+121,9/10/2017,New Richmond,WI,45.1,-92.6,United States,Saint Croix County
+122,9/10/2017,Tivoli,NY,42.0,-73.8,United States,Dutchess County
+123,9/10/2017,Brandon,WI,43.7,-88.9,United States,Green Lake County
+124,9/10/2017,Florissant,MO,38.8,-90.3,United States,Saint Louis County
+125,9/9/2017,Rochester,IN,41.0,-86.3,United States,Fulton County
+126,9/9/2017,New Richmond,WI,45.1,-92.6,United States,Saint Croix County
+127,9/9/2017,New Orleans,LA,30.2,-90.1,United States,St. Tammany Parish
+128,9/9/2017,Wapwallopen,PA,41.1,-76.0,United States,Luzerne County
+129,9/9/2017,Brookfield,IL,41.8,-87.9,United States,Cook County
+130,9/9/2017,Logan,UT,41.7,-111.6,United States,Cache County
+131,9/8/2017,Minocqua,WI,45.9,-89.7,United States,Vilas County
+132,9/8/2017,Slidell,LA,30.3,-89.8,United States,St. Tammany Parish
+133,9/8/2017,New Haven,CT,41.2,-72.9,United States,South Central Connecticut Planning Region
+134,9/8/2017,Richmond,WI,45.1,-92.6,United States,Saint Croix County
+135,9/7/2017,Melbourne,IA,41.9,-93.1,United States,Marshall County
+136,9/7/2017,Madison,CT,41.3,-72.6,United States,South Central Connecticut Planning Region
+137,9/7/2017,Gretna,LA,29.9,-90.1,United States,Jefferson Parish
+138,9/5/2017,Altamont,NY,42.7,-74.0,United States,Albany County
+139,9/5/2017,Chesapeake,VA,36.7,-76.3,United States,Unknown
+140,9/5/2017,Fairfield,PA,39.8,-77.4,United States,Adams County
+141,9/5/2017,Springfield,VA,38.8,-77.2,United States,Fairfax County
+142,9/5/2017,Murray River,PE,46.0,-62.6,Canada,Kings County
+143,9/5/2017,Hancock,MA,42.5,-73.2,United States,Berkshire County
+144,9/4/2017,Eagleville,PA,40.2,-75.4,United States,Montgomery County
+145,9/4/2017,Wichita,KS,35.5,-97.5,United States,Oklahoma County
+146,9/4/2017,Wichita,KS,35.5,-97.5,United States,Oklahoma County
+147,9/4/2017,Ivesdale,IL,39.9,-88.5,United States,Piatt County
+148,9/4/2017,Ivesdale,IL,39.9,-88.5,United States,Piatt County
+149,9/4/2017,West Point,IN,40.3,-87.0,United States,Tippecanoe County
+150,9/3/2017,Cleveland,OH,41.5,-81.7,United States,Cuyahoga County
+151,9/3/2017,Fairdealing,MO,36.6,-90.7,United States,Ripley County
+152,9/3/2017,Forestville,WI,44.7,-87.6,United States,Door County
+153,9/3/2017,Columbus,OH,40.0,-83.0,United States,Franklin County
+154,9/2/2017,London,ON,43.0,-81.3,Canada,Unknown
+155,9/2/2017,Madison,CT,41.3,-72.6,United States,South Central Connecticut Planning Region
+156,9/2/2017,Cooperstown,NY,42.7,-74.9,United States,Otsego County
+157,9/1/2017,Minneapolis,MN,45.0,-93.2,United States,Ramsey County
+158,9/1/2017,Shakopee,MN,44.8,-93.4,United States,Scott County
+159,9/1/2017,Chickasha,OK,35.1,-97.9,United States,Grady County
+160,9/1/2017,Crystal Lake,IL,42.2,-88.3,United States,McHenry County
+161,9/1/2017,Provincetown,MA,42.1,-70.2,United States,Barnstable County
+162,9/1/2017,Omaha,NE,41.3,-96.0,United States,Douglas County
+163,8/31/2017,Harrisville,MI,44.7,-83.3,United States,Alcona County
+164,8/31/2017,Arroyo Grande,CA,35.1,-120.6,United States,San Luis Obispo County
+165,8/31/2017,Fryeburg,ME,44.1,-70.9,United States,Oxford County
+166,8/30/2017,Minneapolis,MN,45.0,-93.2,United States,Ramsey County
+167,8/30/2017,Pottstown,PA,40.2,-75.6,United States,Chester County
+168,8/30/2017,Nescopeck,PA,41.1,-76.1,United States,Luzerne County
+169,8/30/2017,Delhi,NY,42.3,-74.9,United States,Delaware County
+170,8/30/2017,Troy,OH,40.1,-84.2,United States,Miami County
+171,8/29/2017,Regina,SK,50.5,-104.7,Canada,Unknown
+172,8/28/2017,Egg Harbor,WI,45.0,-87.3,United States,Door County
+173,8/28/2017,New Albany,OH,40.1,-82.8,United States,Franklin County
+174,8/27/2017,Colchester,CT,41.6,-72.3,United States,Southeastern Connecticut Planning Region
+175,8/27/2017,Harrisville,MI,44.6,-83.3,United States,Unknown
+176,8/27/2017,Dayton,OH,39.7,-84.1,United States,Greene County
+177,8/26/2017,Havre de Grace,MD,39.6,-76.1,United States,Cecil County
+178,8/26/2017,Havre de Grace,MD,39.6,-76.1,United States,Cecil County
+179,8/26/2017,Gladys,VA,37.1,-79.1,United States,Campbell County
+180,8/26/2017,Cabin John,MD,39.0,-77.2,United States,Montgomery County
+181,8/26/2017,Houlton,WI,45.1,-92.8,United States,Washington County
+182,8/26/2017,Pennsylvania Furnace,PA,40.7,-77.9,United States,Huntingdon County
+183,8/26/2017,Wilno,ON,45.5,-77.5,Canada,Renfrew County
+184,8/26/2017,New Albany,OH,40.1,-82.8,United States,Franklin County
+185,8/25/2017,Middle River,MD,39.3,-76.4,United States,Baltimore County
+186,8/25/2017,Princeton,ON,43.2,-80.5,Canada,Oxford County
+187,8/25/2017,Wilmington,DE,39.8,-75.6,United States,New Castle County
+188,8/25/2017,Simsbury,CT,41.9,-72.8,United States,Capitol Planning Region
+189,8/24/2017,Great Falls,VA,39.0,-77.3,United States,Fairfax County
+190,8/24/2017,Tinley Park,IL,41.6,-87.8,United States,Cook County
+191,8/24/2017,Fairfield,PA,39.8,-77.4,United States,Adams County
+192,8/24/2017,Houston,TX,30.0,-95.6,United States,Harris County
+193,8/24/2017,Albuquerque,NM,35.1,-106.6,United States,Bernalillo County
+194,8/23/2017,Lombard,IL,41.9,-88.0,United States,DuPage County
+195,8/23/2017,Niagara-on-the-Lake,ON,43.2,-79.2,Canada,Niagara Region
+196,8/23/2017,Hopewell Junction,NY,41.6,-73.7,United States,Dutchess County
+197,8/23/2017,Winston-Salem,NC,36.1,-80.2,United States,Forsyth County
+198,8/23/2017,St. Louis,MO,38.6,-90.5,United States,Saint Louis County
+199,8/22/2017,Laketown,MN,44.9,-93.8,United States,Carver County
+200,8/22/2017,Arlington,TX,32.7,-97.1,United States,Tarrant County
+201,8/21/2017,Ottawa,ON,45.5,-75.6,Canada,Unknown
+202,8/21/2017,Pembroke,ON,45.8,-77.1,Canada,Renfrew County
+203,8/21/2017,Columbia,MO,39.0,-92.5,United States,Boone County
+204,8/20/2017,Knoxville,IA,41.3,-93.1,United States,Marion County
+205,8/20/2017,Emmaus,PA,40.5,-75.5,United States,Lehigh County
+206,8/20/2017,Arlington,VA,38.9,-77.1,United States,Arlington County
+207,8/20/2017,Indian Lake,NY,43.8,-74.3,United States,Hamilton County
+208,8/19/2017,Indian Lake,NY,43.8,-74.3,United States,Hamilton County
+209,8/19/2017,Oklahoma City,OK,35.5,-97.5,United States,Oklahoma County
+210,8/19/2017,Houston,TX,30.0,-95.6,United States,Harris County
+211,8/19/2017,Thunder Bay,ON,48.4,-89.3,Canada,Thunder Bay District
+212,8/18/2017,Newburgh,IN,37.9,-87.4,United States,Henderson County
+213,8/18/2017,Severn,MD,39.1,-76.7,United States,Anne Arundel County
+214,8/17/2017,Indian Lake,NY,43.8,-74.3,United States,Hamilton County
+215,8/15/2017,Kaufman,TX,32.5,-96.2,United States,Kaufman County
+216,8/15/2017,Wilno,ON,45.5,-77.5,Canada,Renfrew County
+217,8/13/2017,Ottawa,ON,45.4,-75.6,Canada,Unknown
+218,8/13/2017,Harrisville,NY,44.2,-75.3,United States,Saint Lawrence County
+219,8/13/2017,Peoria,IL,40.8,-89.6,United States,Peoria County
+220,8/13/2017,Frisco,TX,35.5,-97.5,United States,Oklahoma County
+221,8/12/2017,Pickering,ON,43.9,-79.1,Canada,Durham Region
+222,8/12/2017,Brookfield,IL,41.8,-87.8,United States,Cook County
+223,8/12/2017,Indian Lake,NY,43.8,-74.3,United States,Hamilton County
+224,8/11/2017,Orrville,OH,40.8,-81.8,United States,Wayne County
+225,8/11/2017,Kitchener,ON,43.5,-80.5,Canada,Region of Waterloo
+226,8/10/2017,Pickering,ON,43.9,-79.1,Canada,Durham Region
+227,8/10/2017,Tallahassee,FL,30.4,-84.3,United States,Leon County
+228,8/9/2017,Randolph,VT,43.9,-72.6,United States,Orange County
+229,8/9/2017,Newburgh,IN,37.9,-87.4,United States,Henderson County
+230,8/9/2017,Tulsa,OK,36.2,-96.0,United States,Tulsa County
+231,8/9/2017,Toronto,ON,43.7,-79.4,Canada,Unknown
+232,8/9/2017,Windsor,CT,41.9,-72.6,United States,Capitol Planning Region
+233,8/8/2017,Sierra Madre,CA,34.2,-118.1,United States,Los Angeles County
+234,8/8/2017,Zanesville,OH,39.9,-82.0,United States,Muskingum County
+235,8/8/2017,Tulsa,OK,36.2,-96.0,United States,Tulsa County
+236,8/8/2017,Big Rapids,MI,41.8,-86.3,United States,Berrien County
+237,8/8/2017,Allenton,WI,43.4,-88.4,United States,Washington County
+238,8/8/2017,Pickering,ON,43.9,-79.1,Canada,Durham Region
+239,8/8/2017,Bartlesville,OK,36.7,-96.0,United States,Osage County
+240,8/8/2017,Morrisonville,NY,44.6,-73.6,United States,Clinton County
+241,8/7/2017,Wernersville,PA,40.3,-76.1,United States,Berks County
+242,8/7/2017,Minneapolis,MN,45.0,-93.2,United States,Ramsey County
+243,8/7/2017,Big Rapids,MI,41.8,-86.3,United States,Berrien County
+244,8/7/2017,Williston,VT,44.5,-73.1,United States,Chittenden County
+245,8/7/2017,San Leandro,CA,37.7,-122.1,United States,Alameda County
+246,8/7/2017,Grosse Pointe,MI,42.4,-82.9,United States,Wayne County
+247,8/7/2017,Williston,VT,44.5,-73.1,United States,Chittenden County
+248,8/6/2017,Arlington,MA,42.4,-71.2,United States,Middlesex County
+249,8/6/2017,Harrodsburg,KY,37.8,-84.7,United States,Garrard County
+250,8/6/2017,Sand Lake,MN,44.7,-93.2,United States,Dakota County
+251,8/6/2017,Duluth,MN,46.8,-92.1,United States,Saint Louis County
+252,8/6/2017,Rush City,MN,45.7,-93.0,United States,Chisago County
+253,8/6/2017,Pickering,ON,43.9,-79.1,Canada,Durham Region
+254,8/6/2017,Connellsville,PA,40.0,-79.6,United States,Fayette County
+255,8/6/2017,Minneapolis,MN,45.0,-93.3,United States,Hennepin County
+256,8/5/2017,Red Bank,NJ,40.4,-74.1,United States,Monmouth County
+257,8/5/2017,Colora,MD,39.7,-76.1,United States,Cecil County
+258,8/5/2017,Solon Springs,WI,46.4,-91.8,United States,Douglas County
+259,8/5/2017,South Range,WI,46.6,-92.0,United States,Douglas County
+260,8/5/2017,Minneapolis,MN,45.0,-93.3,United States,Hennepin County
+261,8/5/2017,Tolland,CT,41.9,-72.4,United States,Tolland
+262,8/5/2017,Tolland,CT,41.9,-72.4,United States,Tolland
+263,8/5/2017,Haskell,OK,35.8,-95.7,United States,Muskogee County
+264,8/5/2017,Pickering,ON,43.9,-79.1,Canada,Durham Region
+265,8/4/2017,Pickering,ON,43.9,-79.1,Canada,Durham Region
+266,8/4/2017,Middletown,NY,42.4,-73.8,United States,Greene County
+267,8/4/2017,Middletown,NY,41.5,-74.4,United States,Orange County
+268,8/4/2017,Big Rapids,MI,43.7,-85.5,United States,Mecosta County
+269,8/3/2017,Cheektowaga,NY,42.9,-78.7,United States,Erie County
+270,8/3/2017,Pickering,ON,43.9,-79.1,Canada,Durham Region
+271,8/3/2017,Energy,IL,37.8,-89.0,United States,Williamson County
+272,8/3/2017,Indian Lake,NY,43.8,-74.3,United States,Hamilton County
+273,8/2/2017,Cortland,IL,41.9,-88.7,United States,DeKalb County
+274,8/2/2017,Minneapolis,MN,44.9,-93.3,United States,Hennepin County
+275,8/2/2017,Daytona Beach,FL,29.2,-81.0,United States,Volusia County
+276,8/2/2017,Lombard,IL,41.9,-88.0,United States,DuPage County
+277,8/2/2017,Farmington,MN,44.6,-93.1,United States,Dakota County
+278,8/2/2017,Stillwater,MN,44.7,-93.2,United States,Dakota County
+279,8/2/2017,Thunder Bay,ON,48.4,-89.3,Canada,Thunder Bay District
+280,8/2/2017,Center Point,IA,42.2,-91.8,United States,Linn County
+281,8/1/2017,Saint Johns,FL,30.0,-81.6,United States,Saint Johns County
+282,8/1/2017,Louisville,KY,38.1,-85.9,United States,Jefferson County
+283,8/1/2017,Pickering,ON,43.9,-79.1,Canada,Durham Region
+284,8/1/2017,Cortland,IL,41.9,-88.7,United States,DeKalb County
+285,8/1/2017,Hillsborough,NC,36.1,-79.1,United States,Orange County

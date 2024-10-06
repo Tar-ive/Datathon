@@ -1,10 +1,36 @@
 import streamlit as st
+import pandas as pd
 from PIL import Image
 
 st.set_page_config(page_title="Monarch Butterfly Sightings Analysis", layout="wide")
 
 def main():
     st.title("Monarch Butterfly Sightings Analysis")
+
+    # Project Origin
+    st.header("Project Origin")
+    st.write("""
+    This project began with the ambitious task of scraping over 160,000 data points from the Journey North website, 
+    a comprehensive resource for tracking monarch butterfly migrations. The web scraping process, detailed in the 
+    MonarchWebScrapper.ipynb file, utilized Python libraries such as requests, BeautifulSoup, and pandas to 
+    efficiently collect and organize the data.
+
+    After scraping, the data underwent an initial cleaning process to ensure consistency and accuracy. This included:
+    - Removing duplicate entries
+    - Standardizing date formats
+    - Correcting any inconsistencies in location names
+    - Converting coordinates to a uniform format
+
+    The cleaned dataset forms the foundation of our analysis and visualizations presented in this application.
+    """)
+
+    # Load and display basic statistics
+    st.header("Dataset Overview")
+    df = pd.read_csv("updated_dataset_2024.csv")
+    df['Date'] = pd.to_datetime(df['Date'])  # Convert 'Date' column to datetime
+    st.write(f"Total number of observations: {len(df):,}")
+    st.write(f"Date range of observations: from {df['Date'].min().strftime('%m/%d/%Y')} to {df['Date'].max().strftime('%m/%d/%Y')}")
+    st.write(f"Number of unique locations: {df['Town'].nunique():,}")
 
     st.header("Visualizations")
 
@@ -85,12 +111,21 @@ def main():
 
     # Display and explain the fourth image
     st.subheader("Top 10 States and Monarch Population Sightings from 2017-2024")
+    
+    # Calculate and display top 10 states
+    top_10_states = df.groupby('State/Province')['State/Province'].count().nlargest(10)
+    st.write("Top 10 states with the highest number of observations:")
+    st.table(top_10_states.reset_index(name='Count'))
+
     image4 = Image.open("line_slope.png")
     st.image(image4, caption="Top 10 States and Monarch Population Sightings from 2017-2024", use_column_width=True)
     st.write("""
     This multi-line graph shows the Monarch Butterfly sightings for the top 10 states from 2017 to 2024. 
     Each line represents a different state, allowing for easy comparison of sighting trends across states over time. 
     The varying slopes indicate different rates of change in sightings for each state.
+
+    This visualization was created after identifying the top 10 states with the highest number of observations, 
+    as shown in the table above.
 
     Code used to generate this plot:
     ```python
