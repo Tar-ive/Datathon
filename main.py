@@ -10,10 +10,15 @@ def main():
     # Project Origin
     st.header("Project Origin")
     st.write("""
-    This project began with the ambitious task of scraping over 160,000 data points from the Journey North website, 
-    a comprehensive resource for tracking monarch butterfly migrations. The web scraping process, detailed in the 
-    MonarchWebScrapper.ipynb file, utilized Python libraries such as requests, BeautifulSoup, and pandas to 
-    efficiently collect and organize the data.
+    This project began with the ambitious task of scraping data from the Journey North website, 
+    a comprehensive resource for tracking monarch butterfly migrations. The data collection process evolved as follows:
+
+    1. Initially, we scraped "Monarch (Other)" data from Journey North.
+    2. Upon analysis, we realized the need to focus specifically on adult monarch butterflies for more accurate migration patterns.
+    3. We then scraped adult monarch butterfly data from 2017-2024, providing a robust dataset for our analysis.
+
+    The web scraping process, detailed in the MonarchWebScrapper.ipynb file, utilized Python libraries such as requests, 
+    BeautifulSoup, and pandas to efficiently collect and organize the data.
 
     After scraping, the data underwent an initial cleaning process to ensure consistency and accuracy. This included:
     - Removing duplicate entries
@@ -21,16 +26,37 @@ def main():
     - Correcting any inconsistencies in location names
     - Converting coordinates to a uniform format
 
-    The cleaned dataset forms the foundation of our analysis and visualizations presented in this application.
+    The final dataset, named "cleaned_merged.csv", contains over 111,000 observations of adult monarch butterfly sightings. 
+    We chose to focus on adult butterflies because they are easier to spot and potentially represent the highest numbers 
+    in migration patterns, providing a more accurate representation of monarch movement.
+
+    This cleaned and focused dataset forms the foundation of our analysis and visualizations presented in this application.
     """)
 
     # Load and display basic statistics
     st.header("Dataset Overview")
-    df = pd.read_csv("updated_dataset_2024.csv")
+    df = pd.read_csv("cleaned_merged.csv")
     df['Date'] = pd.to_datetime(df['Date'])  # Convert 'Date' column to datetime
     st.write(f"Total number of observations: {len(df):,}")
     st.write(f"Date range of observations: from {df['Date'].min().strftime('%m/%d/%Y')} to {df['Date'].max().strftime('%m/%d/%Y')}")
     st.write(f"Number of unique locations: {df['Town'].nunique():,}")
+
+    # Geographic Distribution of Monarch Butterfly Sightings
+    st.header("Geographic Distribution of Monarch Butterfly Sightings")
+    image_geo = Image.open("Screenshot 2024-10-06 at 9.46.19 AM.png")
+    st.image(image_geo, caption="Heatmap of Monarch Butterfly Sightings Across the United States", use_column_width=True)
+    st.write("""
+    This heatmap illustrates the geographic distribution of monarch butterfly sightings across the United States. 
+    The color intensity represents the concentration of sightings, with darker colors indicating a higher number of observations. 
+    This visualization helps identify key areas of monarch butterfly activity and potential migration routes.
+
+    Key observations from the map:
+    - California and Texas show the highest concentration of sightings, likely due to their importance in the monarch's migration patterns.
+    - There's a notable presence along the East Coast, particularly in the Northeast.
+    - The Midwest also shows significant activity, aligning with known monarch habitats and migration routes.
+
+    This distribution provides valuable insights into the monarch butterfly's preferred habitats and migration patterns across the country.
+    """)
 
     st.header("Visualizations")
 
