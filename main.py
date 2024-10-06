@@ -211,5 +211,38 @@ def main():
     ```
     """)
 
+    # New section: 15k Sample Data Analysis
+    st.subheader("15k Sample Data Analysis")
+
+    st.write('''
+    To gain initial insights and test our data processing methods, we took a 15,000 observation sample from our larger dataset. 
+    This sample allowed us to quickly iterate on our analysis techniques and identify potential patterns or issues in the data 
+    before scaling up to the full dataset.
+    ''')
+
+    image_path_3 = "download (3).png"
+    if os.path.exists(image_path_3):
+        image5 = Image.open(image_path_3)
+        st.image(image5, caption="Distribution of Spring and Fall Data in 15k Sample", use_column_width=True)
+    else:
+        st.write("Image not found. The Distribution of Spring and Fall Data graph is currently unavailable.")
+
+    st.write('''
+    This bar chart shows the distribution of spring and fall data in our 15,000 observation sample. 
+    It provides a quick visual comparison of the number of sightings recorded during each season.
+    ''')
+
+    image_path_4 = "download (4).png"
+    if os.path.exists(image_path_4):
+        image6 = Image.open(image_path_4)
+        st.image(image6, caption="Sample of 15k Dataset", use_column_width=True)
+    else:
+        st.write("Image not found. The Sample of 15k Dataset image is currently unavailable.")
+
+    st.write('''
+    This image shows a snapshot of our 15,000 observation sample dataset. It gives an idea of the structure 
+    and content of our data, including columns for Date, Town, State/Province, Latitude, Longitude, and Number of sightings.
+    ''')
+
 if __name__ == "__main__":
     main()
